@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccentMaroon</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- App Title -->
+    <style name="MenuTitle" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">100dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/off_white</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/colorPrimaryDark</item>
+        <item name="android:shadowDx">12</item>
+        <item name="android:shadowDy">12</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+
+    <!-- Large Menu Button -->
+    <style name="LargeMenuButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorAccentMaroon</item>
+        <item name="android:textSize">@dimen/menu_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/off_white</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+
+    <style name="LargeMenuButton.NewGameButton">
+        <item name="android:background">@color/light_blue</item>
+    </style>
+
+    <!-- Difficulty Buttons -->
+    <style name="LargeMenuButton.DifficultyButton">
+        <item name="android:textSize">@dimen/menu_button_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="LargeMenuButton.DifficultyButton.EasyButton">
+        <item name="android:background">@color/easy_green</item>
+    </style>
+
+    <style name="LargeMenuButton.DifficultyButton.HardButton">
+        <item name="android:background">@color/hard_red</item>
+    </style>
+
+    <!-- Rules -->
+    <style name="RulesTitle" parent="MenuTitle">
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="RuleHeader" parent="ThemeOverlay.AppCompat">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccentMaroon</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+
+    <style name="RuleDescription" parent="ThemeOverlay.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/off_white</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- Leaderboard -->
+
+    <style name="LeaderboardField" parent="ThemeOverlay.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/off_white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/colorAccentDark</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
+

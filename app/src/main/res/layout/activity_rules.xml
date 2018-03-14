@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rules_title"
+        android:text="@string/rules_title"
+        style="@style/RulesTitle"/>
+
+    <TextView
+        android:id="@+id/controls_title"
+        android:layout_below="@+id/rules_title"
+        android:text="@string/controls_title"
+        style="@style/RuleHeader"/>
+
+    <TextView
+        android:id="@+id/controls_description"
+        android:layout_below="@+id/controls_title"
+        android:text="@string/controls"
+        style="@style/RuleDescription"/>
+
+    <TextView
+        android:id="@+id/scoring_title"
+        android:layout_below="@+id/controls_description"
+        android:text="@string/scoring_title"
+        style="@style/RuleHeader"/>
+
+    <TextView
+        android:id="@+id/scoring_description"
+        android:layout_below="@+id/scoring_title"
+        android:text="@string/scoring"
+        style="@style/RuleDescription"/>
+
+    <TextView
+        android:id="@+id/easy_title"
+        android:layout_below="@+id/scoring_description"
+        android:text="@string/easy_title"
+        style="@style/RuleHeader"/>
+
+    <TextView
+        android:id="@+id/easy_description"
+        android:layout_below="@+id/easy_title"
+        android:text="@string/easy_explanation"
+        style="@style/RuleDescription"/>
+
+    <TextView
+        android:id="@+id/hard_title"
+        android:layout_below="@+id/easy_description"
+        android:text="@string/hard_title"
+        style="@style/RuleHeader"/>
+
+    <TextView
+        android:id="@+id/hard_description"
+        android:layout_below="@+id/hard_title"
+        android:text="@string/hard_explanation"
+        style="@style/RuleDescription"/>
+
+    <Button
+        android:id="@+id/return_to_menu"
+        android:onClick="endActivity"
+        android:layout_alignParentBottom="true"
+        android:text="@string/back_to_menu"
+        style="@style/LargeMenuButton"/>
+</RelativeLayout>

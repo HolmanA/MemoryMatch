@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/welcome_title"
+        android:text="@string/app_name"
+        style="@style/MenuTitle"/>
+
+    <RelativeLayout
+        android:id="@+id/newGameBanner"
+        android:layout_below="@+id/welcome_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/centerShim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/newGameButton"
+            android:onClick="selectDifficulty"
+            android:visibility="visible"
+            android:text="@string/new_game_button"
+            style="@style/LargeMenuButton.NewGameButton"/>
+
+        <Button
+            android:id="@+id/easyButton"
+            android:layout_alignRight="@+id/centerShim"
+            android:layout_alignEnd="@+id/centerShim"
+            android:onClick="startGameActivity"
+            android:visibility="gone"
+            android:tag="0"
+            android:text="@string/easy_difficulty"
+            style="@style/LargeMenuButton.DifficultyButton.EasyButton"/>
+
+        <Button
+            android:id="@+id/hardButton"
+            android:layout_alignLeft="@+id/centerShim"
+            android:layout_alignStart="@+id/centerShim"
+            android:onClick="startGameActivity"
+            android:visibility="gone"
+            android:tag="1"
+            android:text="@string/hard_difficulty"
+            style="@style/LargeMenuButton.DifficultyButton.HardButton"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/rulesButton"
+        android:layout_below="@+id/newGameBanner"
+        android:onClick="startRulesActivity"
+        android:text="@string/how_to_play_button"
+        style="@style/LargeMenuButton"/>
+
+    <Button
+        android:id="@+id/leaderboardsButton"
+        android:layout_below="@+id/rulesButton"
+        android:onClick="startLeaderboardActivity"
+        android:text="@string/leaderboards_button"
+        style="@style/LargeMenuButton"/>
+</RelativeLayout>

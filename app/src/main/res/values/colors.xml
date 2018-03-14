@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Colors -->
+    <color name="colorAccentDark">@color/blue_grey_dark</color>
+    <color name="colorPrimary">@color/tan</color>
+    <color name="colorPrimaryDark">@color/tan_dark</color>
+    <color name="colorAccentMaroon">@color/red_brown</color>
+
+    <color name="easy_green">@android:color/holo_green_dark</color>
+    <color name="hard_red">#8b0000</color>
+
+    <color name="tan">#dfba69</color>
+    <color name="tan_dark">#ae9151</color>
+    <color name="blue_grey_dark">#3e4147</color>
+    <color name="off_white">#fffedf</color>
+    <color name="red_brown">#5a2e2e</color>
+    <color name="light_blue">#4eb4cd</color>
+
+</resources>
+
